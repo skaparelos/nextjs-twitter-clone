@@ -1,7 +1,7 @@
 # Visit Live
 Here: [https://nextjs-twitter-clone-nu.vercel.app/](https://nextjs-twitter-clone-nu.vercel.app/)
 
-
+This project is a frontend clone of Twitter's main feed page using NextJS + Typescript + Tailwind CSS
 
 ## Getting Started
 
