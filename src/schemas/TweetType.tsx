@@ -1,3 +1,5 @@
+type Nullable<T> = T | null;
+
 type TweetType = {
   id: number
   text: string
@@ -8,9 +10,9 @@ type TweetType = {
   source: string
   createdAt: string
   updatedAt: string
-  timeless: boolean
-  entities?: {}
-  extendedEntities?: {} 
+  timeless: Nullable<boolean>
+  entities: Nullable<{}>
+  extendedEntities: Nullable<{}>
   author: {
     id: number
     name: string
@@ -19,10 +21,13 @@ type TweetType = {
     profile_created_at: string
     createdAt: string
     updatedAt: string
-    enabled: boolean
-    bio: string
-    type: string
+    enabled: Nullable<boolean>
+    bio: Nullable<string>
+    type: Nullable<string>
     profileID: string
+    classificationDate: Nullable<string>
+    contentScore: Nullable<number>
+    daysThatDid200Tweets: Nullable<number>
   }
 }
 

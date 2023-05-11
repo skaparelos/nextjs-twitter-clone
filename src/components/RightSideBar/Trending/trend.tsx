@@ -1,5 +1,5 @@
 import { DotsHorizontalIcon } from '@heroicons/react/outline'
-import TrendType from '../../schemas/trend'
+import TrendType from '@/schemas/TrendType'
 
 type Props = {
   trend: TrendType

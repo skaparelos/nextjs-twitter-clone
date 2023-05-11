@@ -67,8 +67,8 @@ const LeftSideBar = () => {
             <TwitterLogo />
           </div>
           <div className="space-y-3">
-            {SideBarOptions.map((item) => (
-              <SideBarOption Icon={item.icon} name={item.name} active={item.active} />
+            {SideBarOptions.map((item,) => (
+              <SideBarOption key={item.name} Icon={item.icon} name={item.name} active={item.active} />
             ))}
           </div>
           <TweetButton />
